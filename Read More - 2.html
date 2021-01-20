@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-scope" content="Sign Up">
+    <meta name="google-signin-client_id" content="496446188214-p0mn9pmlk47ac7glprgblg45b9k28n6i.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+    <title>Winners never quit Quitters never win</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <header class="text-gray-600 body-font" style="background: rgb(41, 41, 46);">
+    <div class="h-header flex items-center border-gray-200 rounded-lg">
+    <img alt="logo" class="w-16 h-16 bg-gray-100 img-bg img-2" src="images/logo.jpg">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <span class="ml-3 text-xl ">BLOG ME</span>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+    <a href="http://127.0.0.1:5500/Web%20Template/public/index.html" class="mr-5 hover:text-gray-500">Home</a>
+    <a href="#About" class="mr-5 hover:text-gray-500">About Me</a>
+    <a href="#Blogs" class="mr-5 hover:text-gray-500">Blogs</a>
+    <a href="#Team" class="mr-5 hover:text-gray-500">Team</a>
+    <a href="#Contact" class="mr-5 hover:text-gray-500">Contact</a>
+    </nav>
+    <a>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+    function onSignIn(googleUser) {
+    // Useful data for your client-side scripts:
+    var profile = googleUser.getBasicProfile();
+    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+    console.log('Full Name: ' + profile.getName());
+    console.log('Given Name: ' + profile.getGivenName());
+    console.log('Family Name: ' + profile.getFamilyName());
+    console.log("Image URL: " + profile.getImageUrl());
+    console.log("Email: " + profile.getEmail());
+    
+    // The ID token you need to pass to your backend:
+    var id_token = googleUser.getAuthResponse().id_token;
+    console.log("ID Token: " + id_token);
+    }
+    </script>
+    </a>
+    </div>
+    </header>  
+    <div class="container bg-red-500" style="background: url('images/bg.jpg'); stroke-opacity: initial no-repeat center center fixed -webkit-background-size cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+<hr>
+<section>
+          <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-200 mb-12 text-center">Winners never quit Quitters never win</h1>
+            <div class="flex flex-wrap -m-4">                
+              <div class="h-full bg-gray-300 p-8 rounded">
+                  <p class="leading-relaxed mb-6">A winner is someone who is determined to reach his goals, no matter how arduous the journey may be. A winner is ready to face challenges and obstacles that may come in between him and his goals. On the other hand, a quitter gets perturbed by challenges, and in the midst, gives up. Because he is not determined to face the difficulties, he never reaches his goal and is declared a quitter.</p>
+
+
+                    <p class="leading-relaxed mb-6">Most of us are not born with talent and skills. We develop them over time. Pandit Ravi Shankar was a world renowned composer and musician who played the sitar. He was so passionate about music that he did not stop learning the sitar. Although he faced difficulties initially, he did not lose hope. He was determined to succeed, and he practised day and night to attain a high position in the international music industry. </p>
+                    
+                    
+                    <p class="leading-relaxed mb-6">Similarly, scientists like Issac Newton and Albert Einstein never gave up pursuing their dreams and interests just because some of their experiments failed. They strived hard to reach their goals and only rested when success touched their feet.</p>
+                    
+                    
+                    <p class="leading-relaxed mb-6">To give up midway is easy but to continue despite challenges is difficult. That is why only winners are remembered for a long time. They are our role models, who teach us that it pays to never quit. Success only knocks on the doors of winners because they are determined in life. On the other hand, a quitter lives most of his life in regret because of his lack of motivation and dedication. </p>
+                  <a class="inline-flex items-center">
+                    <img alt="testimonial" src="images/team4.png" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium text-gray-900">Jhon Doe</span>
+                      <span class="text-gray-500 text-sm">Blogger</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <form id="Contact" method="POST" action="contact.php" >
+              <section class="text-gray-600 body-font relative">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Contact and stay in touch with us.</p>
+                  </div>
+                  <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                      <div class="p-2 w-1/2">
+                        <div class="relative">
+                          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                          <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                      </div>
+                      <div class="p-2 w-1/2">
+                        <div class="relative">
+                          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                          <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                      </div>
+                      <div class="p-2 w-full">
+                        <div class="relative">
+                          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                          <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                      </div>
+                      <div class="p-2 w-full">
+                        <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <hr>
+          </form>
+          <footer class="text-gray-600 body-font" style="background: rgb(41, 41, 46);">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+              <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img alt="logo" class="w-16 h-16 bg-gray-100 img-bg img-2" src="images/logo.jpg">
+                <span class="ml-3 text-xl text-white">BLOG ME</span>
+              </a>
+              <a href="https://twitter.com/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">____@Bloging is my passion</a>
+              </p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://www.facebook.com" class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com" class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com" class="ml-3 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </footer>
+</html>
